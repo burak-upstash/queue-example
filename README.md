@@ -16,13 +16,18 @@ Install php, composer, laravel
 - app/Jobs/ExampleJob.php defines the Smallwork Jobs with /smallwork url
 
 - Urls are defined in routes/web.php, /smallwork --> creates small job, /bigwork --> creates 32+kb job
+
+- `composer require predis/predis` --> install predis
+
+- `php artisan config:clear` --> clear cache
+
+- `php artisan queue:restart` --> start all workers
+
  
 ### create .env file, and set the following with upstash config
 ```
 REDIS_URL=redis://default:........
 Change above to redis
-QUEUE_CONNECTION=redis
-
 ```
 
 
