@@ -20,6 +20,8 @@ Install php, composer, laravel
 ### create .env file, and set the following with upstash config
 ```
 REDIS_URL=redis://default:........
+Change above to redis
+QUEUE_CONNECTION=redis
 
 ```
 
