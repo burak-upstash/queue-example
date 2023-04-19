@@ -1,8 +1,8 @@
 # Run the worker
-php artisan queue:listen --queue=default
+`php artisan queue:listen --queue=default` or `php artisan queue:work --queue=default`
 
 # Run the server
-php artisan serve --verbose
+`php artisan serve --verbose`
 
 
 # Prerequisites
@@ -28,6 +28,7 @@ Install php, composer, laravel
 ```
 REDIS_URL=redis://default:........
 Change above to redis
+copy the rest from .env.example file
 ```
 
 
